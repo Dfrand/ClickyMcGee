@@ -1,73 +1,82 @@
-[{
-        "id": 1,
-        "name": "SpongeBob",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
-        "clicked": false
-    },
+[
     {
-        "id": 2,
-        "name": "Mr. Krabs",
+        "id": 1,
         "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
         "clicked": false
     },
     {
+        "id": 2,
+        "image": "https://vignette.wikia.nocookie.net/p__/images/0/09/Garfield.png/revision/latest?cb=20120709141238&path-prefix=protagonist",
+        "clicked": false
+    },
+    {
         "id": 3,
-        "name": "Squidward",
-        "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-        "clicked": false
-    },
-    {
-        "id": 4,
-        "name": "Dexter",
-        "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
-        "clicked": false
-    },
-    {
-        "id": 5,
-        "name": "Courage",
-        "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
-        "clicked": false
-    },
-    {
-        "id": 6,
-        "name": "Doug Funnie",
         "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
         "clicked": false
     },
     {
+        "id": 4,
+        "image": "https://vignette.wikia.nocookie.net/yokai-fanon/images/6/65/Bart_Simpson.png/revision/latest?cb=20160902152052",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "https://vignette.wikia.nocookie.net/fictionalcharacters/images/1/14/Dexter.png/revision/latest?cb=20131107021148",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "https://vignette3.wikia.nocookie.net/poohadventures/images/d/d1/Chuckie_Finster_%28Kid%29.png/revision/latest?cb=20130615011247",
+        "clicked": false
+    },
+    {
         "id": 7,
-        "name": "Bugs Bunny",
-        "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
+        "image": "https://vignette.wikia.nocookie.net/fiction-wrestling-multiverse/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20131231100134",
         "clicked": false
     },
     {
         "id": 8,
-        "name": "Johnny Bravo",
-        "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
-        "clicked": false
-    },
-    {
-        "id": 9,
-        "name": "Tommy Pickles",
         "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
         "clicked": false
     },
     {
+        "id": 9,
+        "image": "https://vignette.wikia.nocookie.net/sonic/images/6/67/Sonic_sonicx.png/revision/latest?cb=20090129051528",
+        "clicked": false
+    },
+    {
         "id": 10,
-        "name": "Rocko",
-        "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
+        "image": "https://vignette.wikia.nocookie.net/unluigi/images/a/aa/NewSuperMarioBros-Luigi.png/revision/latest?cb=20100324014714",
         "clicked": false
     },
     {
         "id": 11,
-        "name": "Captain Planet",
-        "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
+        "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
         "clicked": false
     },
     {
         "id": 12,
-        "name": "Ickis",
-        "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Fred_Flintstone.png/165px-Fred_Flintstone.png",
+        "clicked": false
+    },
+    {
+        "id": 13,
+        "image": "https://vignette.wikia.nocookie.net/fantendo/images/9/9b/207px-Mario_Artwork_-_New_Super_Mario_Bros.png/revision/latest?cb=20131228090551",
+        "clicked": false
+    },
+    {
+        "id": 14,
+        "image": "https://vignette.wikia.nocookie.net/deathbattle/images/2/2a/Walt_Disney_-_Scrooge_McDuck.png/revision/latest?cb=20170201165650",
+        "clicked": false
+    },
+    {
+        "id": 15,
+        "image": "https://vignette3.wikia.nocookie.net/poohadventures/images/d/d1/Chuckie_Finster_%28Kid%29.png/revision/latest?cb=20130615011247",
+        "clicked": false
+    },
+    {
+        "id": 16,
+        "image": "https://vignette.wikia.nocookie.net/fictionalcharacters/images/1/14/Dexter.png/revision/latest?cb=20131107021148",
         "clicked": false
     }
 ]

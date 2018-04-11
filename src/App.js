@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import FriendCard from "./components/FriendCard";
+import Nav from "./components/Nav";
 import friends from "./friends.json";
+import Wrapper from "./components/Wrapper";
+import GameRules from "./components/GameRules";
 import './App.css';
 
 class App extends Component {
@@ -29,9 +32,32 @@ class App extends Component {
     });
   }
 
+  randomImage = (array) => {
+    let copy = [], n = array.length, i;
+    while (n) {
+      i = Math.floor(Math.random() * array.length);
+      if (i in array) {
+        copy.push(array[i]);
+        delete array[i];
+        n--;
+      }
+    }
+    this.setState({ copy });
+  }
+
+  updateScore = () => {
+    this.setState((newState) => ({
+      score: newState.score + 1
+    }), () => this.winning())
+  }
+
+
+
   render() {
   return (
-    
+    <Wrapper>
+        <Nav score={this.state.score} highScore={this.state.highScore} />
+           <GameRules />
         {this.state.friends.map(friend => { 
             return <FriendCard
               {...friend}
@@ -39,7 +65,7 @@ class App extends Component {
               randomRender={this.randomRender}
             />;
         })}
-    
+      </Wrapper>
   )};
 
 }
