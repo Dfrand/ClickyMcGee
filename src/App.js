@@ -22,7 +22,7 @@ class App extends Component {
           this.resetGame();
           return false;
         } else {
-          this.updatedScore();
+          this.updateScore();
           image.clicked = true;
         }
         if (this.state.score >= this.state.highScore) {
@@ -42,7 +42,7 @@ class App extends Component {
         n--;
       }
     }
-    this.setState({ copy });
+    this.setState({ friends: copy });
   }
 
   updateScore = () => {
@@ -51,6 +51,30 @@ class App extends Component {
     }), () => this.winning())
   }
 
+  newHighScore = () => {
+    this.setState((newState) => ({
+      highScore: newState.score
+    }))
+  }
+
+  winning = () => {
+    if (this.state.score === this.state.friends.length) {
+      alert('Winner!')
+      this.setState({});
+      this.resetGame();
+  } else {
+      setTimeout(() => {
+        this.randomImage(this.state.friends)
+      }, 500);
+    }
+  }
+
+  resetGame = () => {
+    this.state.friends.forEach((image) => {
+      image.clicked = false;
+    })
+    this.setState({ score: 0 })
+  }
 
 
   render() {
@@ -63,6 +87,7 @@ class App extends Component {
               {...friend}
               key={friend.id}
               randomRender={this.randomRender}
+              randomImage={() => this.randomOrganize(this.state.friends)}
             />;
         })}
       </Wrapper>
