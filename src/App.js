@@ -3,16 +3,19 @@ import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
 import friends from "./friends.json";
 import Wrapper from "./components/Wrapper";
-import GameRules from "./components/GameRules";
+// import GameRules from "./components/GameRules";
 import './App.css';
 
+
+// I want a Modal to pop up with the Rules
+alert('GAME RULES: Click on an image without clicking on the same image twice! Go for t' +
+    'he High Score!')
 class App extends Component {
   state = {
     score: 0,
     highScore: 0,
     friends: friends 
   };
-
   randomRender = id => {
     this.state.friends.forEach((image) => {
       if (image.id ===id) {
@@ -81,7 +84,7 @@ class App extends Component {
   return (
     <Wrapper>
         <Nav score={this.state.score} highScore={this.state.highScore} />
-           <GameRules />
+           {/* <GameRules /> */}
         {this.state.friends.map(friend => { 
             return <FriendCard
               {...friend}
