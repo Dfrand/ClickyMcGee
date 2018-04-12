@@ -1,0 +1,30 @@
+.card {
+    background-color: rgba(218, 31, 235, 0.687); 
+    border: solid black .25em;
+    display: inline-block;
+    height: 11%;
+    margin-left: 7%;
+    width: 16%;
+}
+
+.card:hover {
+    transform: rotate(-360deg);
+    transition: all 2s;
+}
+
+.img-container {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-container:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+
+img {
+    padding: 10px;
+    width: 80%;    
+}

@@ -1,13 +1,11 @@
 import React from "react";
+import "./Nav.css";
 
 const Nav = props => (
     <nav className="navbar navbar-default">
-        <ul>
-            <li className="brand">Clicky McGee</li>
-            <li>Click on an Image to begin!</li>
-            <li>Current Score: {props.score} </li>
-            <li>High Score: {props.highScore} </li>
-        </ul>
+            <div className="brand">Clicky McGee</div>
+            <p className="navbar-text scores">Current Score: {props.score} <br/>
+            High Score: {props.highScore} </p>
     </nav>
 );
 
