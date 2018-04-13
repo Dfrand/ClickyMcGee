@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import FriendCard from "./components/FriendCard";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
-import friends from "./friends.json";
 import Wrapper from "./components/Wrapper";
+import friends from "./friends.json";
 import swal from 'sweetalert';
 import './App.css';
 
@@ -115,6 +116,7 @@ class App extends Component {
               randomImage={() => this.randomOrganize(this.state.friends)}
             />;
         })}
+        <Footer />
       </Wrapper>
   )};
 
