@@ -1,11 +1,55 @@
+.Loser {
+  border: solid rgb(63, 70, 15) 5px;
+  background-color: rgba(222, 55, 52, 0.899);
+}
+
+.Loser button {
+  background-color: rgb(63, 70, 15);
+  color: rgb(221, 255, 0);
+}
+
+.Loser button:hover {
+  background-color: rgba(63, 70, 15, 0.31);
+  color: rgb(221, 255, 0);
+}
+
+.Rules {
+  border: solid rgb(221, 255, 0) 5px;
+  background-color: rgba(62, 235, 62, 0.899);
+}
+
+.Rules button {
+  background-color: olivedrab;
+  color: rgb(221, 255, 0);
+}
+
+.Rules button:hover {
+  background-color: rgba(106, 142, 35, 0.509);
+  color: rgb(221, 255, 0);
+}
+
+.swal-text {
+  text-align: center;
+  color: whitesmoke;
+}
+
 .title {
   width: 90%;
   text-align: center;
   margin-bottom: 2%;
 }
 
-button {
-  border: solid red 2px;
-  margin-left: 45%;
-  background-color: hsla(95, 95%, 51%, 0.851);
+.Winner {
+  border: solid rgb(181, 54, 120) 5px;
+  background-color: rgba(245, 104, 43, 0.899);
+}
+
+.Winner button {
+  background-color: rgb(181, 54, 120);
+  color: rgb(221, 255, 0);
+}
+
+.Winner button:hover {
+  background-color: rgba(181, 54, 120, 0.509);
+  color: rgb(221, 255, 0);
 }
