@@ -3,28 +3,40 @@ import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
 import friends from "./friends.json";
 import Wrapper from "./components/Wrapper";
-import SweetAlert from 'sweetalert2-react';
-// import GameRules from "./components/GameRules";
+import swal from 'sweetalert';
 import './App.css';
 
 
+// Game Rules
+swal({
+  className : "Rules",
+  title : "Rules of the Game",
+  text : "Click on an image without clicking on the same image twice! Go for the High Score!",
+  icon : "https://media.giphy.com/media/xT5LMSXibBBVeJs6ZO/giphy.gif",
+  button: "Got It!",
+  closeOnClickOutside : true 
+});
 
-
-
-// I want a Modal to pop up with the Rules
-// alert('GAME RULES: Click on an image without clicking on the same image twice! Go for t' +
-//     'he High Score!')
+// Game Logic
 class App extends Component {
   state = {
     score: 0,
     highScore: 0,
-    friends: friends 
+    friends: friends
   };
+
   randomRender = id => {
     this.state.friends.forEach((image) => {
       if (image.id ===id) {
         if (image.clicked) {
-          alert('Game Over! Card already selected.')
+          swal({
+            className : "Loser",
+            title : "Game Over!",
+            text : "Card already selected!",
+            icon: "https://media.giphy.com/media/rKj0oXtnMQNwY/giphy.gif",
+            button: "Try Again!",
+            closeOnClickOutside : true 
+          });
           this.setState({})
           this.resetGame();
           return false;
@@ -66,7 +78,14 @@ class App extends Component {
 
   winning = () => {
     if (this.state.score === this.state.friends.length) {
-      alert('Winner!')
+      swal({
+        className : "Winner",
+        title : "Winner!",
+        text : "You are Amazing!!",
+        icon: "https://media.giphy.com/media/FMapondVtL2Fi/giphy.gif",
+        button: "I Am The Champion!",
+        closeOnClickOutside : true 
+      });
       this.setState({});
       this.resetGame();
   } else {
@@ -96,16 +115,6 @@ class App extends Component {
               randomImage={() => this.randomOrganize(this.state.friends)}
             />;
         })}
-          <div>
-             <button onClick={() => this.setState({ show: true })}>Game Rules</button>
-                <SweetAlert
-                  show={this.state.show}
-                  type = "warning"
-                  title = "Rules of the Game"
-                  text = "Click on an image without clicking on the same image twice! Go for the High Score!"
-                  onConfirm={() => this.setState({ show: false })}
-                  />
-          </div>
       </Wrapper>
   )};
 
