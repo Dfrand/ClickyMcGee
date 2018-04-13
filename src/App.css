@@ -3,3 +3,9 @@
   text-align: center;
   margin-bottom: 2%;
 }
+
+button {
+  border: solid red 2px;
+  margin-left: 45%;
+  background-color: hsla(95, 95%, 51%, 0.851);
+}

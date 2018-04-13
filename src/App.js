@@ -3,13 +3,17 @@ import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
 import friends from "./friends.json";
 import Wrapper from "./components/Wrapper";
+import SweetAlert from 'sweetalert2-react';
 // import GameRules from "./components/GameRules";
 import './App.css';
 
 
+
+
+
 // I want a Modal to pop up with the Rules
-alert('GAME RULES: Click on an image without clicking on the same image twice! Go for t' +
-    'he High Score!')
+// alert('GAME RULES: Click on an image without clicking on the same image twice! Go for t' +
+//     'he High Score!')
 class App extends Component {
   state = {
     score: 0,
@@ -84,7 +88,6 @@ class App extends Component {
   return (
     <Wrapper>
         <Nav score={this.state.score} highScore={this.state.highScore} />
-           {/* <GameRules /> */}
         {this.state.friends.map(friend => { 
             return <FriendCard
               {...friend}
@@ -93,6 +96,16 @@ class App extends Component {
               randomImage={() => this.randomOrganize(this.state.friends)}
             />;
         })}
+          <div>
+             <button onClick={() => this.setState({ show: true })}>Game Rules</button>
+                <SweetAlert
+                  show={this.state.show}
+                  type = "warning"
+                  title = "Rules of the Game"
+                  text = "Click on an image without clicking on the same image twice! Go for the High Score!"
+                  onConfirm={() => this.setState({ show: false })}
+                  />
+          </div>
       </Wrapper>
   )};
 
