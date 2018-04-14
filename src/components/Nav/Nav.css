@@ -1,16 +1,21 @@
 .brand {
-    font-weight: bold;
-    font-size: 4em;
+    color:#000;
+    font-family: 'VT323', monospace;
+    font-size: 4rem;
+    font-weight: 600;
     margin-left: 2%;
+    text-shadow:2px 2px 2px rgb(220, 211, 211);
 }
 
 .navbar {
     background-color: rgb(213, 66, 159);
+    box-shadow: 0 4px 5px rgb(72, 16, 52);
     margin-bottom: 1%;
 }
 
 .scores {
     border: solid yellow 2px;
+    border-radius: 10px;
     color: whitesmoke;
     margin-right: 2%;
     padding-left: 1%;

@@ -1,6 +1,7 @@
 .Loser {
-  border: solid rgb(63, 70, 15) 5px;
   background-color: rgba(222, 55, 52, 0.899);
+  border: solid rgb(63, 70, 15) 5px;
+  box-shadow: 0 4px 50px rgb(101, 38, 38), 0 6px 12px rgb(85, 85, 85);
 }
 
 .Loser button {
@@ -14,8 +15,9 @@
 }
 
 .Rules {
+  background-color: rgb(46, 193, 46, 0.899);
   border: solid rgb(221, 255, 0) 5px;
-  background-color: rgba(62, 235, 62, 0.899);
+  box-shadow: 0 4px 50px rgb(70, 114, 19), 0 6px 12px rgb(143, 152, 22);
 }
 
 .Rules button {
@@ -29,19 +31,22 @@
 }
 
 .swal-text {
-  text-align: center;
   color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .title {
-  width: 90%;
-  text-align: center;
   margin-bottom: 2%;
+  text-align: center;
+  width: 90%;
 }
 
 .Winner {
-  border: solid rgb(181, 54, 120) 5px;
   background-color: rgba(245, 104, 43, 0.899);
+  border: solid rgb(181, 54, 120) 5px;
+  box-shadow: 0 4px 8px rgb(121, 71, 28), 0 6px 12px rgb(85, 85, 85);
 }
 
 .Winner button {
