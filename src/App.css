@@ -15,7 +15,7 @@
 }
 
 .Rules {
-  background-color: rgb(46, 193, 46, 0.899);
+  background-color: rgba(60, 205, 60, 0.899);
   border: solid rgb(221, 255, 0) 5px;
   box-shadow: 0 4px 50px rgb(70, 114, 19), 0 6px 12px rgb(143, 152, 22);
 }
